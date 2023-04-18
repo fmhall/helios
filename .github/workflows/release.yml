@@ -191,7 +191,7 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
         with:
-          prefix-key: "fresh"
+          prefix-key: "fresh2"
 
       - name: build
         run: cargo build --package cli --release --target armv7-unknown-linux-gnueabihf
