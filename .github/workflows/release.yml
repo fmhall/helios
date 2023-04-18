@@ -190,6 +190,8 @@ jobs:
           ldd --version
 
       - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: "fresh"
 
       - name: build
         run: cargo build --package cli --release --target armv7-unknown-linux-gnueabihf
